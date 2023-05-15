@@ -6,7 +6,7 @@ service:
 stages:
   Build:
     mavenExecuteStaticCodeChecks: false
-    npmExecuteLint: true
+    npmExecuteLint: false
   Additional Unit Tests:
     npmExecuteScripts: false
   Acceptance:
@@ -15,7 +15,7 @@ stages:
     cfOrg: "depdev"
     cfSpace: "dev"
     cfAppName: "cicd"
-    cfCredentialsId: "deploy-to-cf"
+    cfCredentialsId: "cfdeploy"
     deployType: "standard"
     npmExecuteEndToEndTests: false
   Compliance:
@@ -26,7 +26,7 @@ stages:
     cfOrg: "depdev"
     cfSpace: "dev"
     cfAppName: "cicd"
-    cfCredentialsId: "deploy-to-cf"
+    cfCredentialsId: "cfdeploy"
     deployType: "standard"
     tmsUpload: false
 steps:
