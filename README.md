@@ -1,2 +1,2 @@
 # cicd - CICDApp
-> Business Application
+> My Business Application
