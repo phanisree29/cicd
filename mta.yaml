@@ -14,7 +14,7 @@ build-parameters:
 
 modules:
   # ---------------- DATABASE DEPLOYER MODULE ------------------
-  - name: hana-deployer
+  - name: cicd-db-deployer
   # ------------------------------------------------------------
     type: hdb
     path: gen/db
@@ -30,7 +30,7 @@ modules:
       disk-quota: 1024M
     requires:
       - name: cicd-uaa
-      - name: hana
+      - name: cicd-db
 
 
   # --------------------- SERVER MODULE ------------------------
@@ -51,7 +51,7 @@ modules:
     requires:
       - name: cicd-uaa
       - name: cicd-dest
-      - name: hana
+      - name: cicd-db
     provides:
       - name: srv-api
         properties:
@@ -119,7 +119,7 @@ resources:
 
 
   # ------------------- HDI CONTAINER SERVICE ------------------
-  - name: hana
+  - name: cicd-db
   # ------------------------------------------------------------
     type: com.sap.xs.hdi-container
     parameters:
