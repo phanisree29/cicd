@@ -1,2 +1,2 @@
 # cicd - CICDApp
-> This is a Business Application test
+> This is a Business Application
