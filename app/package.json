@@ -1,7 +1,16 @@
 {
     "dependencies": {
-        "@sap/approuter": "latest"
+        "@sap/approuter": "latest",
+        "groupId": "junit",
+        "artifactId": "junit",
+        "version": "0.1.2",
+        "scope": "test"
     },
+    "tests": {
+        "name": "paragraph",
+        "description": "Test the title of the HTML page",
+        "expectedResult": "My HTML Page"
+    }
     "scripts": {
         "start": "node node_modules/@sap/approuter/approuter.js"
     }
