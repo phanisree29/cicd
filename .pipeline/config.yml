@@ -8,7 +8,9 @@ stages:
     mavenExecuteStaticCodeChecks: false
     npmExecuteLint: false
   Additional Unit Tests:
-    npmExecuteScripts: false
+    npmExecuteScripts: true
+    runScripts:
+      - "test:odata"
   Acceptance:
     cloudFoundryDeploy: false
     cfApiEndpoint: "https://api.cf.us10-001.hana.ondemand.com"
