@@ -14,7 +14,7 @@ stages:
   Acceptance:
     cloudFoundryDeploy: false
     cfApiEndpoint: "https://api.cf.us10-001.hana.ondemand.com"
-    cfOrg: "depdev"
+    cfOrg: "568e1c23trial_cicd-3opjrr5d"
     cfSpace: "dev"
     cfAppName: "cicd"
     cfCredentialsId: "deploy-to-cf"
